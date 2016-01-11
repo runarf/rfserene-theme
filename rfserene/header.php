@@ -25,7 +25,9 @@
 	<div id="container">
 		<header id="main-header" class="clearfix">
 			<div class="header-image">
-				<img width="1280" height="540" alt="2010" class="attachment-serene-featured-image size-serene-featured-image wp-post-image" src="http://localhost:8888/wordpress/wp-content/uploads/2016/01/vorspiel.jpg">
+				<a href="<?php echo esc_url( home_url( '/' )); ?>">
+					<img width="1280" height="540" alt="2010" class="attachment-serene-featured-image size-serene-featured-image wp-post-image" src="http://46.101.191.24/wp-content/uploads/2016/01/vorspiel.jpg">
+				</a>
 			</div>
 			<!-- <h1 id="logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
