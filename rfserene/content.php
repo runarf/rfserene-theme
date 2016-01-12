@@ -49,7 +49,13 @@
 		<div class="entry-content clearfix">
 		<?php
 		if ( is_single() ) {
-			get_template_part( 'goals' );
+			$game = get_post_meta( get_the_ID(), 'is_game', true);
+			if ($game == True){
+				$goals = get_post_meta( get_the_ID(), '_goals', true);
+				if (isset($goals) && (sizeof($goals) > 0)) {
+					get_template_part( 'goals' );
+				}
+			}
 			the_content();
 
 			wp_link_pages( array(

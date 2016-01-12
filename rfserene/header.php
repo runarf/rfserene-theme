@@ -26,7 +26,7 @@
 		<header id="main-header" class="clearfix">
 			<div class="header-image">
 				<a href="<?php echo esc_url( home_url( '/' )); ?>">
-					<img width="1280" height="540" alt="2010" class="attachment-serene-featured-image size-serene-featured-image wp-post-image" src="http://46.101.191.24/wp-content/uploads/2016/01/vorspiel.jpg">
+					<img width="1280" height="540" alt="2010" class="attachment-serene-featured-image size-serene-featured-image wp-post-image" src="http://46.101.191.24/vorspiel/wp-content/uploads/2016/01/vorspiel.jpg">
 				</a>
 			</div>
 			<!-- <h1 id="logo">

@@ -19,3 +19,42 @@ Version: 08012016
 #menu-menu-1 {
   text-align: center;
 }
+
+.vorspiel-images {
+  width: 100%;
+  height: 100%;
+}
+
+.vorspiel-image-container img {
+  width: 100%;
+}
+
+.entry-content .vorspiel-tu-table td {
+  border-style: none;
+}
+
+.entry-content .vorspiel-tu-table td img {
+  position: relative;
+  top: 12px;
+}
+.entry-content .vorspiel-tu-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-year {
+  text-align: center;
+  font-size: 25px;
+}
+
+.table-more {
+  text-align: center;
+}
+
+
+/* 768, 479, */
+@media only screen and (min-width: 768px)  {
+  .entry-content .vorspiel-tu-table {
+    max-width: 70%;
+  }
+}
