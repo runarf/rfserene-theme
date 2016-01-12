@@ -48,16 +48,11 @@
 
 		<div class="entry-content clearfix">
 		<?php
-		if ( is_single() ) {
-			$game = get_post_meta( get_the_ID(), 'is_game', true);
-			if ($game == True){
-				$goals = get_post_meta( get_the_ID(), '_goals', true);
-				if (isset($goals) && (sizeof($goals) > 0)) {
 					get_template_part( 'goals' );
-				}
-			}
+
 			the_content();
 
+			if (is_single()) {
 			wp_link_pages( array(
 				'before'         => '<p><strong>' . esc_attr__( 'Pages', 'Serene' ) . ':</strong> ',
 				'after'          => '</p>',
@@ -67,12 +62,6 @@
 			the_tags( '<ul class="et-tags clearfix"><li>', '</li><li>', '</li></ul>' );
 
 			edit_post_link( esc_attr__( 'Edit this post', 'Serene' ) );
-		} else {
-			if ( false === ( $show_content = get_theme_mod( 'show_content' ) ) || '' === $show_content ) {
-				the_excerpt();
-			} else {
-				the_content();
-			}
 		}
 		?>
 		</div>

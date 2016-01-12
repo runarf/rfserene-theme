@@ -6,6 +6,7 @@
   $team_home = isset( $teams['team_home']) ? $teams['team_home'][0] : '';
   $team_away = isset( $teams['team_away']) ? $teams['team_away'][0] : '';
 
+  if (!empty($team_home) && !empty($team_away)) {
   echo '<table> <thead> <tr>';
   echo '<th colspan="2">' . $team_home . '</th><th colspan="1">' . $score_home . '</th>';
   echo '<th colspan="2">' . $team_away . '</th><th colspan="1">' . $score_away . '</th></tr>';
@@ -28,5 +29,5 @@
     $i++;
   }
   echo '</table>';
-
+}
  ?>
