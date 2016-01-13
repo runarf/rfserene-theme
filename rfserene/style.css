@@ -51,6 +51,19 @@ Version: 08012016
   text-align: center;
 }
 
+.vorspiel-season:link {
+  color: inherit;
+}
+
+.vorspiel-season:visited {
+  color: inherit;
+}
+
+
+.vorspiel-season:hover {
+  color: blue;
+  text-decoration: none;
+}
 
 /* 768, 479, */
 @media only screen and (min-width: 768px)  {

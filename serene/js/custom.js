@@ -127,18 +127,18 @@
 				}
 			}
 		}
-		if ($(window).width() > 480) {
+		if ($(window).width() > 760) {
 			et_highlight_current_menu_item( $current_menu_item, false );
 		}
 
 		$top_menu.find( '> ul > li' ).hover( function() {
-			if ($(window).width() > 480) {
+			if ($(window).width() > 760) {
 				et_highlight_current_menu_item( $(this), true );
 			}
 		} );
 
 		$top_menu.find( '> ul' ).mouseleave( function() {
-			if ($(window).width() > 480) {
+			if ($(window).width() > 760) {
 				et_highlight_current_menu_item( $current_menu_item, true );
 			}
 		} );

@@ -221,7 +221,7 @@ embed,iframe,object,video {
 	position: relative;
 }
 #container, #infinite-footer .container {
-	width: 1280px;
+	width: 960px; /*1280px;*/
 }
 #main-header {
 	margin-top: 140px;
@@ -399,7 +399,7 @@ article.post,article.page {
 	color: #fff;
 }
 .post-content {
-	padding: 50px 160px 140px;
+	padding: 50px 100px 140px;
 	text-align: center;
 	line-height: 39px;
 }
@@ -1887,7 +1887,7 @@ img.alignright {
 		font-size: 16px;
 	}
 	#container, #infinite-footer .container {
-		width: 440px;
+		width: 95%; /* 440px; */
 	}
 	#top-menu,#et-social-icons {
 		//display: none;
@@ -2139,7 +2139,7 @@ img.alignright {
 		font-size: 16px;
 	}
 	#container, #infinite-footer .container {
-		width: 280px;
+		width: 95%; /*280px; */
 	}
 	article.post {
 		margin-bottom: 20px;

@@ -661,9 +661,10 @@ function serene_post_meta_info() { ?>
 	<div class="meta-date">
 		<div class="meta-date-wrap">
 		<?php
-			printf( '<span class="meta-post-date"><strong>%s.</strong>%s</span>', /* <a href="%s"><div class="meta-comments-count"><span aria-hidden="true" class="icon_comment_alt"></span>%s</div></a>*/
+			printf( '<span class="meta-post-date">%s.%s.%s</span>', /* <a href="%s"><div class="meta-comments-count"><span aria-hidden="true" class="icon_comment_alt"></span>%s</div></a>*/
+				get_the_time( _x( 'd', 'post info day', 'Serene' ) ),
 				get_the_time( _x( 'M', 'post info month name', 'Serene' ) ),
-				get_the_time( _x( 'd', 'post info day', 'Serene' ) )
+				get_the_time( _x( 'Y', 'post info year', 'Serene' ) )
 				//esc_url( get_permalink() ),
 				//sprintf( _n( '1', '%1$s', get_comments_number(), 'Serene'), number_format_i18n( get_comments_number() ) )
 			);/*
